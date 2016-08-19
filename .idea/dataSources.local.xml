@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - cake_blog_tutorial@127.0.0.1" uuid="623a6960-588f-4702-9e48-cb9f701b4c23">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <resolve-scope>banana_cake:|cake_blog_tutorial:*</resolve-scope>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>192.168.56.102</proxy-host>
+        <proxy-port>22</proxy-port>
+        <secret-storage>master_key</secret-storage>
+        <user>ozawa</user>
+        <use-password>true</use-password>
+      </ssh-properties>
+    </data-source>
+  </component>
+</project>

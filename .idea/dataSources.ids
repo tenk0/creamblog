@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - cake_blog_tutorial@127.0.0.1" uuid="623a6960-588f-4702-9e48-cb9f701b4c23">
+    <database-info product="MySQL" version="5.6.16-1~exp1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="cake_blog_tutorial">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="banana_cake"/>
+      <schema id="3" name="disaster_bbs"/>
+      <schema id="4" name="information_schema"/>
+      <schema id="5" name="mysql"/>
+      <schema id="6" name="performance_schema"/>
+      <table id="7" parent="1" name="admins"/>
+      <table id="8" parent="1" name="categories"/>
+      <table id="9" parent="1" name="posts"/>
+      <table id="10" parent="1" name="users"/>
+      <column id="11" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="12" parent="7" name="username">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="13" parent="7" name="password">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="14" parent="7" name="created">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="15" parent="7" name="modified">
+        <data-type>datetime|0</data-type>
+      </column>
+      <key id="16" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="17" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="18" parent="8" name="name">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <key id="19" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="20" parent="9" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="21" parent="9" name="title">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="22" parent="9" name="body">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="23" parent="9" name="created">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="24" parent="9" name="modified">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="25" parent="9" name="user_id">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="26" parent="9" name="category_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="27" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="28" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="29" parent="10" name="username">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="30" parent="10" name="password">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="31" parent="10" name="created">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="32" parent="10" name="modified">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="33" parent="10" name="state">
+        <data-type>int(11)|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="34" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
